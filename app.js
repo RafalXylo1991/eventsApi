@@ -20,6 +20,8 @@ app.use(bodyParser.json());
 app.use("/", router);
 router.post("/postHours",async(req,res)=>{
  console.log(req.body)
+ return res.send("done")
+
 })
 app.listen(port, () =>{ console.log(`Server running on localhost:${port}`)
 
