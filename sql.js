@@ -26,9 +26,9 @@ const connect=async()=>{
     client.query(x, (err, res) => {
       
       
-      if (err) throw err
      
-      console.log(res)
+     
+      
    
     })
   }
