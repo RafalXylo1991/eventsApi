@@ -2,11 +2,11 @@
 const { Client } = require('pg');
 const { symlinkSync } = require('fs');
 const client = new Client({
-  host: 'ec2-50-19-255-190.compute-1.amazonaws.com',
+  host: 'ec2-34-234-240-121.compute-1.amazonaws.com',
   port: 5432,
-  user: 'fqwlgpbmahxrza',
-  database:'dd3ues1j43iln2',
-  password: '54195ef5a658458a0a0d8bbcba325fec0b244d299e7f4ec45968b7ab406134cf',
+  user: 'qcnlglgoklfcdd',
+  database:'dd7oguiu2chgb6',
+  password: '8471d4b88c0932ed33f747a9f068f6166519bbf5408868cda811be2262d6023d',
   ssl: { rejectUnauthorized: false }
     
 })
@@ -26,8 +26,8 @@ const connect=async()=>{
     weekup.toUpperCase();
    let y= weekup+data.week[1,data.week.length]
     console.log(capitalizeFirstLetter("cycki"));
-
-    client.query(x, (err, res) => {
+ // let x = "insert into events values("+data[0]+","+data[1]+"  "
+    client.query("x", (err, res) => {
       
       
       if (err) throw err
