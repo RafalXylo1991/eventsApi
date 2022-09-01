@@ -20,6 +20,22 @@ const connect=async()=>{
   
   
   }
+  const insertEvent=async(data)=>{
+    console.log(typeof(data.week))
+    let weekup = data.week.charAt(0);
+    weekup.toUpperCase();
+   let y= weekup+data.week[1,data.week.length]
+    console.log(capitalizeFirstLetter("cycki"));
 
+    client.query(x, (err, res) => {
+      
+      
+      if (err) throw err
+     
+      console.log(res)
+   
+    })
+  }
+  
 
-  module.exports = {connect}
+  module.exports = {connect,insertEvent}
