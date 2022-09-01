@@ -21,11 +21,16 @@ app.use("/", router);
 router.post("/postHours",async(req,res)=>{
  console.log(req.body)
  let event = {
-       name:req.body["name"]
+       name:req.body["name"],
+       type:req.body["type"],
+       date:req.body["date"],
+       hours:req.body["hours"],
+       desc:req.body["desc"]
 
  }
+var cycki=Object.values(req.body);
 
- console.log(event.name)
+ console.log(cycki)
  return res.send("done")
 
 })
