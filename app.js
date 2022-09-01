@@ -21,7 +21,7 @@ app.use("/", router);
 router.post("/postHours",async(req,res)=>{
 
 var cycki=Object.values(req.body);
-console.log(cycki);
+sql.insertEvent(cycki);
  
  return res.send("done")
 

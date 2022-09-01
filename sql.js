@@ -26,7 +26,7 @@ const connect=async()=>{
     weekup.toUpperCase();
    let y= weekup+data.week[1,data.week.length]
     console.log(capitalizeFirstLetter("cycki"));
- // let x = "insert into events values("+data[0]+","+data[1]+"  "
+  let x = "insert into events values("+data[1]+","+data[2]+","+data[3]+","+data[5]+","+data[0]+","+data[4]+")  ";
     client.query(x, (err, res) => {
       
       
