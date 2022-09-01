@@ -20,8 +20,11 @@ app.use(bodyParser.json());
 app.use("/", router);
 router.post("/postHours",async(req,res)=>{
  console.log(req.body)
- var event = new event();
- event.name=req.body("name");
+ let event = {
+       name:req.body("name")
+
+ }
+
  console.log(event.name)
  return res.send("done")
 
