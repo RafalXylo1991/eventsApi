@@ -21,7 +21,20 @@ const connect=async()=>{
   
   }
   const insertEvent=async(data)=>{
+    console.log(typeof(data.week))
+    let weekup = data.week.charAt(0);
+    weekup.toUpperCase();
+   let y= weekup+data.week[1,data.week.length]
+    console.log(capitalizeFirstLetter("cycki"));
+ // let x = "insert into events values("+data[0]+","+data[1]+"  "
+    client.query(x, (err, res) => {
+      
+      
+      if (err) throw err
+     
+      console.log(res)
    
+    })
   }
   
 
