@@ -26,6 +26,13 @@ sql.insertEvent(cycki).then(()=>{ return res.send("done")})
 
 
 })
+router.post("/getEvents",async(req,res)=>{
+
+  sql.getEvents().then((data)=>{return res.send(data)})
+     
+    
+    
+    })
 app.listen(port, () =>{ console.log(`Server running on localhost:${port}`)
 
 sql.connect();

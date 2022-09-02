@@ -27,12 +27,32 @@ const connect=async()=>{
     client.query(x, (err, res) => {
       
       if(err){console.log(err)}
-     
+  
      
       
    
     })
   }
+  const getEvents=async()=>{
+    return new Promise((resolve,recive)=>{
+      let x ="SELECT * from values"
+      client.query(x, (err, res) => {
+          
+        
+          resolve(res.rows)
+         
+         
+          
+       
+        })
+  
+  
+  
+    })
+  
+  
+  }
   
 
-  module.exports = {connect,insertEvent}
+
+  module.exports = {connect,insertEvent,getEvents}
