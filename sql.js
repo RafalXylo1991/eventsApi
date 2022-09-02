@@ -42,7 +42,7 @@ const connect=async()=>{
           resolve(res.rows)
          
          
-          
+          if(err){console.log(err)}
        
         })
   
