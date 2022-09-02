@@ -21,9 +21,9 @@ app.use("/", router);
 router.post("/postHours",async(req,res)=>{
 
 var cycki=Object.values(req.body);
-sql.insertEvent(cycki);
+sql.insertEvent(cycki).then(()=>{ return res.send("done")})
  
- return res.send("done")
+
 
 })
 app.listen(port, () =>{ console.log(`Server running on localhost:${port}`)
