@@ -35,7 +35,7 @@ const connect=async()=>{
   }
   const getEvents=async()=>{
     return new Promise((resolve,recive)=>{
-      let x ="SELECT * from values"
+      let x ="SELECT * from events"
       client.query(x, (err, res) => {
           
         
