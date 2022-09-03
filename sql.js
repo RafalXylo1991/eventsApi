@@ -24,14 +24,14 @@ const connect=async()=>{
   
   let x = "insert into events values('"+data[1]+"','"+data[2]+"',"+data[3]+",'"+data[5]+"','"+data[0]+"','"+data[4]+"','"+data[6]+"')  ";
   console.log(x)
-   // client.query(x, (err, res) => {
+    client.query(x, (err, res) => {
       
-   //   if(err){console.log(err)}
+      if(err){console.log(err)}
   
      
       
    
-  //  })
+   })
   }
   const getEvents=async()=>{
     return new Promise((resolve,recive)=>{
