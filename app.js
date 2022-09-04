@@ -33,6 +33,13 @@ router.get("/getEvents",async(req,res)=>{
     
     
     })
+    router.delete("/delEvent/:data",async(req,res)=>{
+
+     console.log(req.params.data)
+         
+        
+        
+        })
 app.listen(port, () =>{ console.log(`Server running on localhost:${port}`)
 
 sql.connect();
