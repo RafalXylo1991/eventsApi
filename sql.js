@@ -33,6 +33,19 @@ const connect=async()=>{
    
    })
   }
+  const deleteEvent=async(data)=>{
+  
+    let x = "delete from events where data='"+data+"'";
+    console.log(x)
+      client.query(x, (err, res) => {
+        
+        if(err){console.log(err)}
+    
+       
+        
+     
+     })
+    }
   const getEvents=async()=>{
     return new Promise((resolve,recive)=>{
       let x ="SELECT * from events"
@@ -55,4 +68,4 @@ const connect=async()=>{
   
 
 
-  module.exports = {connect,insertEvent,getEvents}
+  module.exports = {connect,insertEvent,getEvents,deleteEvent}

@@ -36,7 +36,7 @@ router.get("/getEvents",async(req,res)=>{
     router.delete("/delEvent/:data",async(req,res)=>{
 
      console.log(req.params.data)
-         
+      sql.deleteEvent(req.params.data).then(()=>{return res.send("event was deleted....")})   
         
         
         })
