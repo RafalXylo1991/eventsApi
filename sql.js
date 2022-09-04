@@ -35,7 +35,7 @@ const connect=async()=>{
   }
   const deleteEvent=async(data)=>{
   
-    let x = "delete from events where data='"+data+"'";
+    let x = "delete from events where date='"+data+"'";
     console.log(x)
       client.query(x, (err, res) => {
         
