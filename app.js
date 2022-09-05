@@ -36,7 +36,7 @@ router.get("/getEvents",async(req,res)=>{
 
     router.put("/setState",async(req,res)=>{
 
-         sql.setState(req.body);
+         sql.setState(req.body).then(()=>{return res.send("Data was updated...")});
         
         
         })
