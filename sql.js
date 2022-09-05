@@ -35,7 +35,7 @@ const connect=async()=>{
   }
   const setState=async(data)=>{
   
-    let x = "update events set State = '"+data["state"]+"'+where  date =   '"+data["date"]+"'";
+    let x = "update events set State = '"+data["state"]+"' where  date =   '"+data["date"]+"'";
     console.log(x)
       client.query(x, (err, res) => {
         
