@@ -35,8 +35,8 @@ router.get("/getEvents",async(req,res)=>{
     })
 
     router.put("/setState",async(req,res)=>{
-console.log(req.body)
-         
+
+         sql.setState(req.body);
         
         
         })
