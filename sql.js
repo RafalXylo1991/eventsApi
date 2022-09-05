@@ -33,6 +33,19 @@ const connect=async()=>{
    
    })
   }
+  const setState=async(data)=>{
+  
+    let x = "update events set State = '"+data[1]+"'+where "
+    console.log(x)
+      client.query(x, (err, res) => {
+        
+        if(err){console.log(err)}
+    
+       
+        
+     
+     })
+    }
   const deleteEvent=async(data)=>{
   
     let x = "delete from events where date='"+data+"'";

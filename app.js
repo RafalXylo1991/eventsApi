@@ -33,6 +33,13 @@ router.get("/getEvents",async(req,res)=>{
     
     
     })
+
+    router.get("/setState",async(req,res)=>{
+console.log(req.body)
+         
+        
+        
+        })
     router.delete("/delEvent/:data",async(req,res)=>{
 
      console.log(req.params.data)
