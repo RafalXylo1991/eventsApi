@@ -40,6 +40,12 @@ router.get("/getEvents",async(req,res)=>{
         
         
         })
+        router.put("/setHours",async(req,res)=>{
+console.log(req.body)
+         // sql.setState(req.body).then(()=>{return res.send("Data was updated...")});
+         
+         
+         })
     router.delete("/delEvent/:data",async(req,res)=>{
 
      console.log(req.params.data)
