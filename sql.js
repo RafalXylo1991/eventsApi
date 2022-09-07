@@ -78,7 +78,26 @@ const connect=async()=>{
   
   
   }
+  const setReminderOne=async()=>{
+    return new Promise((resolve,recive)=>{
+      let x ="update events set hours="+data["hours"]+"set reminderOne='"+data["date"]+"'";
+      client.query(x, (err, res) => {
+          
+        
+          resolve(res.rows)
+         
+         
+          if(err){console.log(err)}
+       
+        })
+  
+  
+  
+    })
+  
+  
+  }
   
 
 
-  module.exports = {connect,insertEvent,getEvents,deleteEvent,setState}
+  module.exports = {connect,insertEvent,getEvents,deleteEvent,setState,setReminderOne}
