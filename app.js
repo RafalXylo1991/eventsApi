@@ -42,7 +42,7 @@ router.get("/getEvents",async(req,res)=>{
         })
         router.put("/setHours",async(req,res)=>{
 console.log(req.body)
-      //   sql.setReminderOne(req.body).then(()=>{return res.send("Reminder was set...")});
+         sql.setReminderOne(req.body).then(()=>{return res.send("Reminder was set...")});
          
          
          })

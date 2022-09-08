@@ -81,6 +81,7 @@ const connect=async()=>{
   const setReminderOne=async()=>{
     return new Promise((resolve,recive)=>{
       let x ="update events set hours="+data["hours"]+"set reminderOne='"+data["date"]+"'";
+      console.log("cipeczka")
       client.query(x, (err, res) => {
           
         
