@@ -80,7 +80,7 @@ const connect=async()=>{
   }
   const setReminderOne=async(data)=>{
     return new Promise((resolve,recive)=>{
-      let x ="update events set hours="+data["hours"]+"set reminderOne='"+data["date"]+"'";
+      let x ="update events set hours="+data["hours"]+" set reminderOne='"+data["date"]+"'";
       console.log(x)
       client.query(x, (err, res) => {
           
