@@ -53,7 +53,7 @@ console.log(req.body)
         
         
         })
-        router.post("/delEvent/addH",async(req,res)=>{
+        router.post("/addH",async(req,res)=>{
 
           console.log(req.body)
          
