@@ -53,6 +53,13 @@ console.log(req.body)
         
         
         })
+        router.post("/delEvent/addH",async(req,res)=>{
+
+          console.log(req.body)
+         
+             
+             
+             })
 app.listen(port, () =>{ console.log(`Server running on localhost:${port}`)
 
 sql.connect();
