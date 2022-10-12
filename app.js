@@ -21,7 +21,7 @@ app.use("/", router);
 router.post("/postHours",async(req,res)=>{
 
 var cycki=Object.values(req.body);
-console.log(cycki)
+
 sql.insertEvent(cycki).then(()=>{ return res.send("done")})
  
 
@@ -50,7 +50,7 @@ console.log(req.body)
     router.delete("/delEvent/:data",async(req,res)=>{
 
      console.log(req.params.data)
-      sql.deleteEvent(req.params.data).then(()=>{return res.send("event was deleted....")})   
+     // sql.deleteEvent(req.params.data).then(()=>{return res.send("event was deleted....")})   
         
         
         })
