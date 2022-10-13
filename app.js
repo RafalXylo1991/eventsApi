@@ -50,9 +50,9 @@ console.log(req.body)
     router.delete("/delEvent/:data",async(req,res)=>{
 
      console.log(req.params.data)
-     // sql.deleteEvent(req.params.data).then(()=>{return res.send("event was deleted....")})   
+     sql.deleteEvent(req.params.data).then(()=>{return res.send("event was deleted....")})   
         
-        return res.send("cipeczka")
+        return res.send("done")
         })
         router.post("/addH",async(req,res)=>{
 
