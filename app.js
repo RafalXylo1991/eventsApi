@@ -52,7 +52,7 @@ console.log(req.body)
      console.log(req.params.data)
      // sql.deleteEvent(req.params.data).then(()=>{return res.send("event was deleted....")})   
         
-        
+        return res.send("cipeczka")
         })
         router.post("/addH",async(req,res)=>{
 
